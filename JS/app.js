@@ -6,9 +6,10 @@ let sectionEl = document.getElementById('cardSection');
 
 
 // constructor
-function Employee(id, name, department, level, image, salary) {
+function Employee(id, name, aadhar, department, level, image, salary) {
   this.employeeId = id;
   this.fullName = name;
+  this.aadhar = aadhar;
   this.department = department;
   this.level = level;
   this.image = image;
@@ -36,7 +37,7 @@ Employee.prototype.render = function () {
   // create Department, Level, salary, Id for employee
   let paragraph = document.createElement('p');
   paragraph.classList = ('card-text');
-  paragraph.textContent = `ID: ${this.employeeId} \n - Department: ${this.department} \n - Level: ${this.level} \n - salary: ${this.salary} JD`;
+  paragraph.textContent = `ID: ${this.employeeId} \n Aadhar: ${this.aadhar} \n - Department: ${this.department} \n - Level: ${this.level} \n - salary: ${this.salary} JD`;
   card.appendChild(paragraph);
 };
 
@@ -95,13 +96,14 @@ function handleSubmit(event) {
 
   let id = Employee.prototype.id();
   let fullName = event.target.fname.value;
+  let aadhar = event.target.aadhar.value;
   let department = event.target.floatingSelect1.value;
   let level = event.target.floatingSelect2.value;
   let image = event.target.formFile.value;
-  let salary = Employee.prototype.salary();
+  let salary = event.target.salary.value;
 
 
-  let newEmployee = new Employee(id, fullName, department, level, image, salary);
+  let newEmployee = new Employee(id, fullName,aadhar, department, level, image, salary);
 
   newEmployee.render();
 
