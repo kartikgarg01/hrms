@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR management system</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/36b35ace47.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/logoipsum-logo-55.svg"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="../assets/logoipsum-logo-55.svg" alt="logo" class="logo" />
+        <a id="home" href="./index.html">Home</a>
+        <a id="accounting" href="./accounting.html">Accounting</a>
+      </nav>
+    </header>
+    <main>
+      <section id="cardSection">
+       
+        <div class="cadDiv" id="cadDiv"></div>
+      </section>
+      <form action="" class="form mx-auto" id="form" >
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="fname"
+            name="fullName"
+            placeholder="Full name"
+          />
+          <label for="floatingInput">Full name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="date"
+            class="form-control"
+            id="Dob"
+            name="Date of birth"
+            placeholder="Date of birth"
+          />
+          <label for="floatingInput">Date of birth</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="Aadharcard"
+            name="Aadhar card"
+            placeholder="Aadhar card"
+          />
+          <label for="floatingInput">Aadhar card</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="Pancard"
+            name="Pancard"
+            placeholder="Pancard"
+          />
+          <label for="floatingInput">Pancard</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="Passport"
+            name="Passport number"
+            placeholder="Passport number"
+          />
+          <label for="floatingInput">Passport number</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="IFSC"
+            name="IFSC code"
+            placeholder="IFSC code"
+          />
+          <label for="floatingInput">IFSC Code</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="AccountNumber"
+            name="Account number"
+            placeholder="Account number"
+          />
+          <label for="floatingInput">Account Number</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="BankName"
+            name="Bank Name"
+            placeholder="Bank Name"
+          />
+          <label for="floatingInput">Bank Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="Mobile"
+            name="Mobile Number"
+            placeholder="Mobile number"
+          />
+          <label for="floatingInput">Mobile Number</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="Address"
+            name="Address"
+            placeholder="Address"
+          />
+          <label for="floatingInput">Address</label>
+        </div>
+
+        <div class="form-floating">
+          <select
+            class="form-select"
+            id="floatingSelect1"
+            name="department"
+            aria-label="Floating label select example"
+          >
+            <option selected>Choose a Department</option>
+            <option value="Administration">Administration</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Development">Development</option>
+            <option value="Finance">Finance</option>
+          </select>
+          <label for="floatingSelect">Departments</label>
+        </div>
+        <div class="form-floating">
+          <select
+            class="form-select"
+            id="floatingSelect2"
+            name="level"
+            aria-label="Floating label select example"
+          >
+            <option selected>Choose a Level</option>
+            <option value="Junior">Junior</option>
+            <option value="Mid-Senior">Mid-Senior</option>
+            <option value="Senior">Senior</option>
+          </select>
+          <label for="floatingSelect">Levels</label>
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Insert an image url</label>
+          <input
+            class="form-control"
+            type="text"
+            id="formFile"
+            name="image"
+            placeholder="Image URL"
+          />
+        </div>
+         <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput2"
+            name="salary"
+            placeholder="salary"
+          />
+          <label for="floatingInput">salary</label>
+        </div>
+        <div class="btn">
+          <input
+            class="btn btn-dark"
+            id="btn"
+            type="submit"
+            value="Add Employee"
+          />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-solid fa-copyright">All rights reserved.</i>
+    </footer>
+    <script src="../JS/app.js"></script>
+  </body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR management system</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/36b35ace47.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/logoipsum-logo-55.svg"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="../assets/logoipsum-logo-55.svg" alt="logo" class="logo" />
+        <a id="home" href="./index.html">Home</a>
+        <a id="accounting" href="./accounting.html">Accounting</a>
+      </nav>
+    </header>
+    <main>
+      <section id="cardSection">
+        card section is here !!
+        <div class="cadDiv" id="cadDiv"></div>
+      </section>
+      <form action="" class="form" id="form">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput1"
+            name="fullName"
+            placeholder="Full name"
+          />
+          <label for="floatingInput">Full name</label>
+        </div>
+        <div class="form-floating">
+          <select
+            class="form-select"
+            id="floatingSelect1"
+            name="department"
+            aria-label="Floating label select example"
+          >
+            <option selected>Choose a Department</option>
+            <option value="Administration">Administration</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Development">Development</option>
+            <option value="Finance">Finance</option>
+          </select>
+          <label for="floatingSelect">Departments</label>
+        </div>
+        <div class="form-floating">
+          <select
+            class="form-select"
+            id="floatingSelect2"
+            name="level"
+            aria-label="Floating label select example"
+          >
+            <option selected>Choose a Level</option>
+            <option value="Junior">Junior</option>
+            <option value="Mid-Senior">Mid-Senior</option>
+            <option value="Senior">Senior</option>
+          </select>
+          <label for="floatingSelect">Levels</label>
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Insert an image url</label>
+          <input
+            class="form-control"
+            type="text"
+            id="formFile"
+            name="image"
+            placeholder="Image URL"
+          />
+        </div>
+        <div class="btn">
+          <input
+            class="btn btn-dark"
+            id="btn"
+            type="submit"
+            value="Add Employee"
+          />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-solid fa-copyright">All rights reserved.</i>
+    </footer>
+    <script src="../JS/app.js"></script>
+  </body>
+</html> -->
